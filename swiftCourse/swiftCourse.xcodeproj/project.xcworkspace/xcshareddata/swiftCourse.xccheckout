@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>64994339-35BF-4DB0-AE6A-C10363B27504</string>
 	<key>IDESourceControlProjectName</key>
-	<string>swiftCourse</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EC740576E24681D5DCED77E8BDCFBED2E8A1D2D3</key>
 		<string>https://github.com/fawkes32/swiftCourse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>swiftCourse/swiftCourse.xcodeproj</string>
+	<string>swiftCourse/swiftCourse.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EC740576E24681D5DCED77E8BDCFBED2E8A1D2D3</key>
