@@ -262,10 +262,58 @@ telefono.obtenerModelo()
 telefono.estableceMarca("Motorola")
 telefono.obtenerMarca()
 
+// Constructores
 
 
+class Figura {
+    var lados : Int
+    var longitud:Float = 1
+    
+    init(lados : Int) {
+        self.lados = lados
+    }
+    
+    init(lados:Int, longitud:Float){
+        self.lados = lados
+        self.longitud = longitud
+    }
+    
+    var perimetro :Float {
+        get{
+            return Float(lados) * longitud
+        }
+        set{
+            longitud = newValue/Float(lados)
+        }
+    }
+    
+}
+
+var figura = Figura(lados: 3)
+figura.perimetro
+figura.perimetro = 9
 
 
+unIphone.obtenerModelo()
+
+class iPhone : SmartPhone {
+    init(modelo: String){
+        super.init()
+        self.modelo = modelo
+    }
+}
+
+var otroIphone = iPhone(modelo:"5s")
+otroIphone.obtenerModelo()
+
+class Nexus : iPhone{
+    override func obtenerModelo() -> String {
+        return "Nexus \(modelo)"
+    }
+}
+
+var unNexus = Nexus(modelo: "5")
+unNexus.obtenerModelo()
 
 
 

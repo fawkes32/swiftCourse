@@ -105,3 +105,16 @@ msdn.microsoft.com
 
 
 #SWIFT
+
+revisar la seccion de codigo
+
+# CONTROLES
+
+se maneja con la estructura de MVC para poder navegar entre las applicaciones ademas deaprovechar todas las ventajas de este modelo. 
+
+utilizamos los controladores, vistas, objetos , gestos, kits 
+
+
+
+
+
