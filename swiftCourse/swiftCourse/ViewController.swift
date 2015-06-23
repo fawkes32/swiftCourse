@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var txtNombre: UITextField!
     
@@ -26,9 +26,28 @@ class ViewController: UIViewController {
     }
 
     @IBAction func actionSaludo(sender: AnyObject) {
-        lblResultado.text = "Hola Amigo " + txtNombre.text!
+        if !txtNombre.text.isEmpty{
+            lblResultado.text = "Hola Amigo " + txtNombre.text!
+        }else{
+            lblResultado.text = "Necesito un nombre "
+        }
+        
         
     }
 
+    @IBAction func actionDespedida(sender: AnyObject) {
+        
+        if !txtNombre.text.isEmpty{
+            lblResultado.text = "Adios Amigo " + txtNombre.text!
+        }else{
+            lblResultado.text = "Necesito un nombre "
+        }
+       
+        
+    }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    }
 }
 
