@@ -211,6 +211,57 @@ func perimetro(longLados:Double...) -> Double{
 
 perimetro(3,4,5,6,1)
 
+/// desarrollo de clases 
+
+
+class SmartPhone{
+    var marca = "apple"
+    var modelo = "6s"
+    
+    
+    
+    func obtenerModelo()->String{
+        return "Iphone \(modelo)"
+    }
+}
+
+
+var unIphone = SmartPhone()
+unIphone.obtenerModelo()
+
+
+class SmartPhone2{
+    var atributos = ["marca": "", "modelo": ""]
+    
+    func obtenerModelo() -> String{
+        var modelo = atributos["modelo"]
+        return modelo!
+    }
+    
+    func obtenerMarca() -> String {
+    
+        var marca = atributos["marca"]
+        return marca!
+    }
+    
+    func estableceMarca(marca: String){
+        atributos["marca"] = marca
+    }
+    
+    func estableceModelo(modelo:String){
+        atributos["modelo"] = modelo
+    }
+    
+}
+
+var telefono = SmartPhone2()
+telefono.obtenerModelo()
+
+telefono.estableceModelo("Nexus")
+telefono.obtenerModelo()
+telefono.estableceMarca("Motorola")
+telefono.obtenerMarca()
+
 
 
 
