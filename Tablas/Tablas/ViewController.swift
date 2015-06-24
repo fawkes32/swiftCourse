@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UINavigationBarDelegate {
 
-    var frutas = ["Mango", "Melon", "Fresa"]
+    @IBOutlet weak var tabla: UITableView!
+   private var frutas = ["Mango", "Melon", "Fresa"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
         
     }
 
@@ -44,6 +47,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         println("\(indexPath.row)")
     }
+    
+   
+    @IBAction func addItem(sender: AnyObject) {
+        frutas.append("Coco")
+        tabla.reloadData()
+    
+    }
+    
 
 
 }
