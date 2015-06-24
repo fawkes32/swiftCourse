@@ -41,5 +41,80 @@ las soluciones moviles requieren infraestructura detras de ellas. en el pasado l
 
 cloud computing
 
+¿quien va a soportar mi aplicacion?
+la aplicacion va a ser soportada por un centro de datos 24x7 los 365 dias del año y solo vamos a pagar lo que nuestros usuarios requieran.
+
+en donde voy a almacenar la informacion de mis usuarios? 
+En un centro de datos que me cobra bajo demanda
+
+cuando cuestan los servicios de datos y mensajeria? 
+La marca me proporciona los mecanismos para implementar mensajeria, mapas y otros muchos servicios sin costro inicial o con un costo minimo
+
+como vendo mi solucion? 
+tienda 
+
+Servicios (xcode apis)
+
+comunicacion WEB 
+REST/SOAP
+las aplicaciones se comunican con los servidores utilizando llamadas http y https
+
+esto es tan simple como poner una liga de un explorador, pero es escencial para establecer informacion centralizada y comunicacion enstre aplicaciones (JSON)
+
+proyecto safe exit. 
+
+jsonlint
+
+comunicacion web how google cloud platform works
+http://cloud.google.com
+
+reglas de uso de los apis
+
+facebook y su modelo de user y password muy robusto
+
+
+
+#Programaciòn
+Objeto: componente o codigo de software que contiene en si mismo sus caracteristicas (campos) como sus comportamientos(metodos), se accede atravez de su interfaz
+
+Campo: es una caracteristica de un objeto, que ayuda a definir su estructura y permite diferenciarlo de otros objetos. se define...
+
+Metodo:
+
+Modularidad:
+
+Reutilizacion: 
+msdn
+Polimorfismo: 
+
+
+Genericidad: 
+
+
+Operaciones relacionales:
+
+
+Caja negra: 
+
+
+Sobrecarga: 
+
+
+
+msdn.microsoft.com
+
+
+#SWIFT
+
+revisar la seccion de codigo
+
+# CONTROLES
+
+se maneja con la estructura de MVC para poder navegar entre las applicaciones ademas deaprovechar todas las ventajas de este modelo. 
+
+utilizamos los controladores, vistas, objetos , gestos, kits 
+
+
+
 
 
