@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2F397CD6-86AA-46B1-9AB9-CC8CD05F56DC</string>
+	<string>CE094E0A-53F8-43B8-9282-D7890A3571EF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>HTTPPrueba</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EC740576E24681D5DCED77E8BDCFBED2E8A1D2D3</key>
 		<string>https://github.com/fawkes32/swiftCourse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HTTPPrueba/HTTPPrueba.xcodeproj</string>
+	<string>loginPrueba/loginPrueba.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EC740576E24681D5DCED77E8BDCFBED2E8A1D2D3</key>
