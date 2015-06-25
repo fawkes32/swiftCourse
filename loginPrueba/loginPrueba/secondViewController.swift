@@ -20,6 +20,12 @@ class secondViewController : UIViewController{
         
     }
     
+    @IBAction func btnLogout(sender: AnyObject) {
+        
+        NSUserDefaults.standardUserDefaults().removeObjectForKey("username")
+        performSegueWithIdentifier("fail", sender: self)
+        
+    }
     
     
 }

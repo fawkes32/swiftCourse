@@ -21,7 +21,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("username") != nil {
+            performSegueWithIdentifier("succes", sender: self)
+        }
+        
         initHTTP()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -70,6 +79,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self.respuestaServerResultado = respuesta["resultado"] as! String
                 
                 if self.respuestaServerResultado == "OK" {
+                    
+                    NSUserDefaults.standardUserDefaults().setObject(self.txtUserName.text, forKey: "username")
+                    
                     self.performSegueWithIdentifier("succes", sender: self)
                     
                 }else{
