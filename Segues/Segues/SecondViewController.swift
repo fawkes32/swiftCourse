@@ -18,6 +18,9 @@ class SecondViewController : UIViewController{
         println("\(valorRecibido)")
     }
     
-    
+    @IBAction func salirAction(sender: AnyObject) {
+        exit(0)
+        
+    }
     
 }

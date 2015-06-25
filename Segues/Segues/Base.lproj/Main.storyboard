@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MLY-PX-SES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1SZ-TC-sMc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnd-W9-bkp">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnd-W9-bkp">
                                 <rect key="frame" x="277" y="165" width="54" height="30"/>
                                 <state key="normal" title="Cambio">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,14 +28,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96573007825486157" green="0.40415038265006753" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Bnd-W9-bkp" firstAttribute="leading" secondItem="1x0-g5-jy2" secondAttribute="leading" constant="277" id="Qah-wh-10G"/>
+                            <constraint firstItem="Bnd-W9-bkp" firstAttribute="top" secondItem="H4j-l2-0vE" secondAttribute="bottom" constant="101" id="UUM-o2-xaz"/>
+                        </constraints>
                     </view>
-                    <connections>
-                        <segue destination="5Hz-5n-TWM" kind="show" identifier="cambioTouch" id="u6t-Fb-0hY"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="RAF-Ah-Dkf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNh-rO-y6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="425" y="343"/>
+            <point key="canvasLocation" x="1237" y="343"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="ggY-ck-aay">
@@ -48,15 +50,49 @@
                     <view key="view" contentMode="scaleToFill" id="BAl-cd-Nrh">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Because Fuck U... thats why!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0G-fb-KQ7">
+                                <rect key="frame" x="188" y="127" width="224" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.55812100482666849" green="1" blue="0.11451434056268095" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="C0G-fb-KQ7" firstAttribute="top" secondItem="17Q-Im-hg9" secondAttribute="bottom" constant="63" id="CpL-kP-gMp"/>
+                            <constraint firstItem="C0G-fb-KQ7" firstAttribute="centerX" secondItem="BAl-cd-Nrh" secondAttribute="centerX" id="Nvc-Ro-PAK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Uvb-Gc-QDD">
+                        <barButtonItem key="rightBarButtonItem" title="Salir" id="eHv-o5-k8O">
+                            <connections>
+                                <action selector="salirAction:" destination="5Hz-5n-TWM" id="F7V-tD-vRM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8SC-rv-gGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="161"/>
+            <point key="canvasLocation" x="1933" y="161"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Jb-SX-aBT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1SZ-TC-sMc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a3L-sx-gIx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="MLY-PX-SES" kind="relationship" relationship="rootViewController" id="NK2-qE-mJK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Me0-BD-qFI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="343"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="u6t-Fb-0hY"/>
-    </inferredMetricsTieBreakers>
 </document>

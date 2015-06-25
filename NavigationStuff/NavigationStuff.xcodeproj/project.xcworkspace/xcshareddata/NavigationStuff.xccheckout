@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0A1123B3-71F9-4D0B-A46F-07194D1DD5DE</string>
+	<string>431C942B-727D-4E5B-BC35-9DCB4C3898A3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Tablas</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EC740576E24681D5DCED77E8BDCFBED2E8A1D2D3</key>
 		<string>https://github.com/fawkes32/swiftCourse.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tablas/Tablas.xcodeproj</string>
+	<string>NavigationStuff/NavigationStuff.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EC740576E24681D5DCED77E8BDCFBED2E8A1D2D3</key>
