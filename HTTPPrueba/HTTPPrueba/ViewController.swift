@@ -8,14 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     var request:HTTPTask!
+    
+    @IBOutlet weak var texto: UITextField!
+  
+    @IBOutlet weak var lblRespuesta: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initHTTP()
-        callService()
         
     }
 
@@ -24,6 +27,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        self.view.endEditing(true)
+    
+    
+    }
+    
+    
+    
+    @IBAction func probarServer(sender: AnyObject) {
+        
+        callService()
+    }
     func initHTTP(){
         self.request = HTTPTask()
         self.request.requestSerializer = JSONRequestSerializer()
@@ -31,8 +46,10 @@ class ViewController: UIViewController {
     }
     
     func callService(){
+        var nombre = texto.text!
+        nombre = nombre.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
         
-        var metodo = "http://desarrollo.gservicio.com:8080/cursoswift/services.php/saluda/Daniel%20Marquez"
+        var metodo = "http://desarrollo.gservicio.com:8080/cursoswift/services.php/saluda/" + nombre
         
         self.request.GET(metodo,
             parameters: nil,
@@ -44,7 +61,8 @@ class ViewController: UIViewController {
     func onRespuesta( response: HTTPResponse){
         if let respuesta = response.responseObject as? Dictionary<String,AnyObject>{
             NSOperationQueue.mainQueue().addOperationWithBlock{
-            println(respuesta["mensaje"]!)
+            var respuestaServer: String = respuesta["mensaje"]! as! String
+                self.lblRespuesta.text = respuestaServer
             }
         }
     }

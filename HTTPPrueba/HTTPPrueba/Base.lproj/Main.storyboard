@@ -36,6 +36,9 @@
                                 <state key="normal" title="Probar">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="probarServer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Oh5-f0-ve9"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respuesta del server: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSd-cy-Pqr">
                                 <rect key="frame" x="50" y="243" width="171" height="21"/>
@@ -60,6 +63,10 @@
                             <constraint firstItem="eOZ-YH-Nw4" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="89" id="uz9-fF-hVW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblRespuesta" destination="sSd-cy-Pqr" id="O9w-EV-0EQ"/>
+                        <outlet property="texto" destination="piy-7E-wVl" id="vYP-Yo-ANn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
