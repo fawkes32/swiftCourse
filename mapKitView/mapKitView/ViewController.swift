@@ -43,6 +43,13 @@ class ViewController: UIViewController,MKMapViewDelegate {
         //annotation.title = "Big Ben"
         //annotation.subtitle = "London"
         mapView.addAnnotation(annotation)
+        
+        
+        let regionRadius:CLLocationDistance = 500
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location, regionRadius*2.0, regionRadius * 2.0)
+        
+        mapView.setRegion(coordinateRegion, animated: true)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
